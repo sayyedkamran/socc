@@ -47,7 +47,7 @@ The map mirrors [Topic 03](topic-03-learning-paradigms.md): the supervised famil
 Here you only need to recognize each algorithm: its name, a mental picture, and one line of intuition. The full details come in [Chapter 7](../chapter-07-classical-machine-learning/).
 
 * **Linear regression**: draws the best-fit straight line through numeric data and uses it to predict a number (a house price, tomorrow's demand).
-* **Logistic regression**: despite the name, a *classifier*. It squashes a linear score into a probability of "yes" or "no" (what a probability really means is [Topic 06](topic-06-probability.md)'s job).
+* **Logistic regression**: despite the name, a *classifier*. It squashes a linear score into a probability of "yes" or "no" (what a probability really means is [Topic 06](topic-06-probability-as-output.md)'s job).
 * **Decision trees**: a flowchart of yes/no questions learned from data ("Income > 50k? Late payments > 2?"). Follow the branches to a prediction you can read aloud.
 * **Random forests**: hundreds of slightly different trees vote, and the crowd is more accurate than any single tree. This is your first taste of *ensembles*, combining weak models into a strong one.
 * **Gradient boosting (XGBoost, LightGBM, CatBoost)**: trees built one after another, each correcting the mistakes of those before it. Arguably the dominant family for tabular data today, the default winner of ML competitions and the engine inside countless production systems.
