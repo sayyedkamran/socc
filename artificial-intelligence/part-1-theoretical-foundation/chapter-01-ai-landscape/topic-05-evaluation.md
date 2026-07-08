@@ -6,14 +6,6 @@
 
 Notice what changed from ordinary software. A normal program is *verified*: given this input, assert that exact output. A learned model is probabilistic, so there is no exact output to assert. Evaluation therefore shifts from verifying logic to **statistically validating behavior**. It is also the most violated discipline in machine learning: a model that looks brilliant during training can fail embarrassingly in production, and evaluation is what catches the failure before your users do.
 
-## Why It Matters
-
-* **Training success is not real success.** Picture two students: one memorizes every practice question, the other understands the concepts. Both ace the practice set; only one survives the real exam. Models face exactly this test, and the only score that counts comes from unseen data.
-* **Metrics decide what ships.** Whether model A replaces model B is settled by numbers. Pick the wrong number and you ship the wrong model.
-* **The obvious metric often lies.** On imbalanced problems (fraud, disease, spam), plain accuracy can look excellent while the model is useless. Knowing when accuracy lies is a professional survival skill.
-* **It is a safety function.** Evaluation is how biases, failure modes, and vulnerabilities get caught before deployment in places where mistakes hurt: healthcare, lending, autonomous driving. Deciding which error is more acceptable (a false alarm or a miss) is not a technical footnote; it is the decision.
-* **It is a recurring theme, not a chapter.** Evaluation returns in classical ML, deep learning, LLMs, and agents, getting harder each time. Benchmarks and LLM evals are this topic wearing new clothes ([Topic 15](topic-15-large-language-models.md)).
-
 ## Core Concepts
 
 ### The Golden Rule: Test on Unseen Data
@@ -50,7 +42,7 @@ graph LR
     TEST --> SHIP[Deploy]
 ```
 
-This loop (train, score, adjust, repeat) is the daily rhythm of applied ML. What "adjust" means inside the model is the story of [Topic 07](topic-07-gradient-descent.md).
+This loop (train, score, adjust, repeat) is the daily rhythm of applied ML. What "adjust" means inside the model is the story of [Topic 07: Gradient Descent](topic-07-gradient-descent.md).
 
 ### Baselines: Beat the Dumb Model First
 
@@ -65,7 +57,7 @@ For yes/no predictions, every outcome lands in one of four boxes, together calle
 * **Recall**: of everything truly positive, how much did the model catch? High recall means few misses.
 * **F1 score**: a single number balancing precision and recall, useful when you need one score to compare models.
 
-Precision and recall pull against each other: flag more aggressively and you catch more real cases (recall up) but raise more false alarms (precision down). Where you set that dial depends on which mistake costs more, and the dial exists because most classifiers do not actually output "yes" or "no" but a probability that you threshold, which is exactly [Topic 06](topic-06-probability-as-output.md)'s subject. One more name to recognize: **ROC-AUC**, a single score for how well a model separates the two classes across *every* possible threshold rather than just one.
+Precision and recall pull against each other: flag more aggressively and you catch more real cases (recall up) but raise more false alarms (precision down). Where you set that dial depends on which mistake costs more, and the dial exists because most classifiers do not actually output "yes" or "no" but a probability that you threshold, which is exactly the subject of [Topic 06: Probability as Output](topic-06-probability-as-output.md). One more name to recognize: **ROC-AUC**, a single score for how well a model separates the two classes across *every* possible threshold rather than just one.
 
 ### Judging Regressors
 
@@ -105,7 +97,7 @@ Generative models strained the classic toolkit: when the output is an open-ended
 * **Overlap scores (BLEU, ROUGE)**: count how much generated text matches human reference texts. Cheap and automatic, but blind to meaning and factual accuracy.
 * **Perplexity**: how confident the model's next-word predictions are; lower means a better grip on the language.
 * **LLM-as-judge**: a strong model grades another model's outputs against criteria like helpfulness and faithfulness (is it grounded in the sources, or hallucinating?).
-* **Human preference**: people vote between two anonymous answers, and the votes roll up into chess-style Elo rankings on public arenas. Human preference also *trains* models, the subject of [Topic 19](topic-19-alignment.md).
+* **Human preference**: people vote between two anonymous answers, and the votes roll up into chess-style Elo rankings on public arenas. Human preference also *trains* models, the subject of [Topic 19: Alignment](topic-19-alignment.md).
 
 And three reasons modern evaluation is genuinely hard:
 
@@ -113,7 +105,15 @@ And three reasons modern evaluation is genuinely hard:
 * **Saturation**: models max out benchmarks faster than researchers can build harder ones.
 * **Goodhart's law**: "when a measure becomes a target, it ceases to be a good measure." Teams tune models to climb famous leaderboards, and the leaderboard stops predicting real-world usefulness.
 
-Deeper treatment of the classical metrics (ROC curves and friends) comes in [Chapter 7](../chapter-07-classical-machine-learning/); evaluating agents, the hardest case of all, waits for [Topic 23](topic-23-ai-agents.md).
+Deeper treatment of the classical metrics (ROC curves and friends) comes in [Chapter 7: Classical Machine Learning](../chapter-07-classical-machine-learning/); evaluating agents, the hardest case of all, waits for [Topic 23: AI Agents](topic-23-ai-agents.md).
+
+## Why It Matters
+
+* **Training success is not real success.** Picture two students: one memorizes every practice question, the other understands the concepts. Both ace the practice set; only one survives the real exam. Models face exactly this test, and the only score that counts comes from unseen data.
+* **Metrics decide what ships.** Whether model A replaces model B is settled by numbers. Pick the wrong number and you ship the wrong model.
+* **The obvious metric often lies.** On imbalanced problems (fraud, disease, spam), plain accuracy can look excellent while the model is useless. Knowing when accuracy lies is a professional survival skill.
+* **It is a safety function.** Evaluation is how biases, failure modes, and vulnerabilities get caught before deployment in places where mistakes hurt: healthcare, lending, autonomous driving. Deciding which error is more acceptable (a false alarm or a miss) is not a technical footnote; it is the decision.
+* **It is a recurring theme, not a chapter.** Evaluation returns in classical ML, deep learning, LLMs, and agents, getting harder each time. Benchmarks and LLM evals are this topic wearing new clothes ([Topic 15: Large Language Models](topic-15-large-language-models.md)).
 
 ## Real-World Examples
 
@@ -147,7 +147,7 @@ In code, classical evaluation is nearly free. **scikit-learn** ships `train_test
 
 ## Think About It
 
-1. Return to Topic 04's question: churn model A is right 91% of the time, model B 89%. What would you now ask before crowning A? (Start with: what does "always predict no churn" score?)
+1. Return to the churn question from Topic 04: Classical Machine Learning. Model A is right 91% of the time, model B 89%. What would you now ask before crowning A? (Start with: what does "always predict no churn" score?)
 2. In airport security screening, which error is worse: a false positive or a false negative? Who should set that threshold: the engineer, the security agency, or the passengers bearing the delays?
 3. A model tops a famous benchmark. Then a researcher finds benchmark questions in its training data, and the team admits it tuned for that leaderboard for months. What, if anything, do the scores still tell you?
 

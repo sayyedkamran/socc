@@ -16,19 +16,7 @@ A more precise and widely used definition comes from **Tom Mitchell** (1997):
 
 In plain terms: a system is *learning* if it gets better at a task the more data it sees.
 
-This single idea — improvement through experience rather than instruction — is the foundation of modern AI. Deep Learning, Large Language Models, and AI agents are all Machine Learning at their core.
-
----
-
-## Why It Matters
-
-To understand why Machine Learning exists, consider a problem that defeated traditional programming: **spam filtering**.
-
-You could try writing explicit rules: flag emails containing "free money," flag unknown senders, flag excessive capital letters. But spammers adapt — they write "fr€€ m0ney," use hijacked accounts, and mimic legitimate emails. Every new trick requires a new hand-written rule, and the rule list grows endlessly while always staying one step behind.
-
-Machine Learning inverts the approach: instead of writing rules, you show the system thousands of examples of spam and non-spam, and it **discovers the distinguishing patterns itself**. When spammers adapt, you retrain on new examples — no rule rewriting required.
-
-This is why ML dominates wherever the rules are too complex, too numerous, or too fluid to write by hand: recognizing faces, understanding speech, translating languages, predicting demand, generating text. Nobody can write down explicit rules for "what makes this photo a cat" — but a system can learn them from a million labeled photos.
+This single idea (improvement through experience rather than instruction) is the foundation of modern AI. Deep Learning, Large Language Models, and AI agents are all Machine Learning at their core.
 
 ---
 
@@ -60,15 +48,15 @@ flowchart LR
     end
 ```
 
-The learned rules are called a **model**. Once trained, the model is used like a traditional program: feed it new data, get answers out. The difference is that no human ever wrote its internal logic — it was discovered from examples.
+The learned rules are called a **model**. Once trained, the model is used like a traditional program: feed it new data, get answers out. The difference is that no human ever wrote its internal logic: it was discovered from examples.
 
 ---
 
 ### Data, Datasets, and Features
 
-A collection of examples used for learning is called a **dataset**. Each example is described by **features** — the individual pieces of information the model can use. For a house, features might be its size, location, age, and number of bedrooms. In many datasets, each example also includes the correct answer, called a **label** (the house's actual selling price).
+A collection of examples used for learning is called a **dataset**. Each example is described by **features**: the individual pieces of information the model can use. For a house, features might be its size, location, age, and number of bedrooms. In many datasets, each example also includes the correct answer, called a **label** (the house's actual selling price).
 
-Data is the foundation of Machine Learning: a model can only learn from the examples it is given. If the data is incomplete, biased, or unrepresentative, the model learns those flaws too. In practice, improving the data often matters more than improving the model — hence the practitioner's saying: *"Better data beats more complex algorithms."*
+Data is the foundation of Machine Learning: a model can only learn from the examples it is given. If the data is incomplete, biased, or unrepresentative, the model learns those flaws too. In practice, improving the data often matters more than improving the model, hence the practitioner's saying: *"Better data beats more complex algorithms."*
 
 ---
 
@@ -87,11 +75,11 @@ A **model** is a mathematical function with adjustable internal settings called 
 
 Repeat this millions of times, and the parameters gradually settle into values that make good predictions. That is all "learning" means: **automatically adjusting parameters to reduce error on examples**.
 
-How exactly the adjustment happens (gradient descent) is covered later in this chapter — for now, the key insight is that learning is an optimization process, not magic.
+How exactly the adjustment happens (gradient descent) is covered later in this chapter. For now, the key insight is that learning is an optimization process, not magic.
 
-A useful mental model: Machine Learning is a **search for the best function** that maps inputs to outputs. Training is the search, the model is the function that gets discovered, and using that function on new data is called **inference** — a distinction (training vs inference) that gets its own topic later in this chapter.
+A useful mental model: Machine Learning is a **search for the best function** that maps inputs to outputs. Training is the search, the model is the function that gets discovered, and using that function on new data is called **inference**, a distinction (training vs inference) that gets its own topic later in this chapter.
 
-One caution: despite the name, this "learning" is numerical adjustment, not human-style understanding. The model forms no concepts or intentions — a point the final topic of this chapter returns to.
+One caution: despite the name, this "learning" is numerical adjustment, not human-style understanding. The model forms no concepts or intentions, a point the final topic of this chapter returns to.
 
 ---
 
@@ -99,14 +87,14 @@ One caution: despite the name, this "learning" is numerical adjustment, not huma
 
 A common misconception is that a model's job is to get the training examples right. It is not.
 
-The true goal is **generalization** — performing well on **new, unseen data**. A spam filter that perfectly classifies the 10,000 emails it was trained on but fails on tomorrow's inbox is worthless.
+The true goal is **generalization**: performing well on **new, unseen data**. A spam filter that perfectly classifies the 10,000 emails it was trained on but fails on tomorrow's inbox is worthless.
 
 This creates the central tension of Machine Learning:
 
 * A model that merely **memorizes** its training data fails on anything new (called **overfitting**).
 * A model that is too simple to capture the real patterns fails everywhere (called **underfitting**).
 
-Almost everything in ML practice — how much data to collect, how complex a model to use, how to evaluate it — revolves around managing this tension. It is such a central discipline that this chapter dedicates an entire topic to evaluation.
+Almost everything in ML practice (how much data to collect, how complex a model to use, how to evaluate it) revolves around managing this tension. It is such a central discipline that this chapter dedicates an entire topic to evaluation.
 
 ---
 
@@ -126,7 +114,7 @@ Machine Learning is powerful but not universal. A useful rule of thumb:
 * The rules constantly change (fraud patterns, user preferences).
 * The problem involves prediction from patterns in large amounts of data.
 
-Choosing ML when a hundred lines of ordinary code would suffice is one of the most common beginner mistakes. Data-driven learning is a tool — not an upgrade over regular programming.
+Choosing ML when a hundred lines of ordinary code would suffice is one of the most common beginner mistakes. Data-driven learning is a tool, not an upgrade over regular programming.
 
 ---
 
@@ -134,9 +122,9 @@ Choosing ML when a hundred lines of ordinary code would suffice is one of the mo
 
 Every Machine Learning system, regardless of complexity, is built from three essential ingredients:
 
-* **Data** — the examples from which the system learns.
-* **Model** — the mathematical function whose parameters are being learned.
-* **Learning algorithm** — the procedure that adjusts those parameters to improve performance.
+* **Data**: the examples from which the system learns.
+* **Model**: the mathematical function whose parameters are being learned.
+* **Learning algorithm**: the procedure that adjusts those parameters to improve performance.
 
 Whether it is a simple linear regression or a trillion-parameter Large Language Model, these three ingredients never change. Only their scale and sophistication do.
 
@@ -146,18 +134,30 @@ Whether it is a simple linear regression or a trillion-parameter Large Language 
 
 Recall the nested hierarchy from the previous topic: **AI ⊃ ML ⊃ Deep Learning ⊃ LLMs**.
 
-Machine Learning is the layer where "learning from data" enters the picture. Everything below it — Deep Learning, Large Language Models — is still Machine Learning, just with increasingly powerful model types. When you later study transformers and LLMs, remember: they are trained with exactly the loop described above — predict, measure error, adjust parameters, repeat.
+Machine Learning is the layer where "learning from data" enters the picture. Everything below it (Deep Learning, Large Language Models) is still Machine Learning, just with increasingly powerful model types. When you later study transformers and LLMs, remember: they are trained with exactly the loop described above: predict, measure error, adjust parameters, repeat.
+
+---
+
+## Why It Matters
+
+To understand why Machine Learning exists, consider a problem that defeated traditional programming: **spam filtering**.
+
+You could try writing explicit rules: flag emails containing "free money," flag unknown senders, flag excessive capital letters. But spammers adapt: they write "fr€€ m0ney," use hijacked accounts, and mimic legitimate emails. Every new trick requires a new hand-written rule, and the rule list grows endlessly while always staying one step behind.
+
+Machine Learning inverts the approach: instead of writing rules, you show the system thousands of examples of spam and non-spam, and it **discovers the distinguishing patterns itself**. When spammers adapt, you retrain on new examples, no rule rewriting required.
+
+This is why ML dominates wherever the rules are too complex, too numerous, or too fluid to write by hand: recognizing faces, understanding speech, translating languages, predicting demand, generating text. Nobody can write down explicit rules for "what makes this photo a cat", but a system can learn them from a million labeled photos.
 
 ---
 
 ## Real-World Examples
 
-* **Spam filtering** — learns spam patterns from millions of labeled emails.
-* **House price estimation** — learns the relationship between features (size, location, age) and price from historical sales.
-* **Credit card fraud detection** — learns normal spending patterns and flags anomalies in real time.
-* **Product recommendations** — learns your preferences from your behavior and that of similar users.
-* **Medical diagnosis support** — learns to detect tumors from thousands of annotated scans.
-* **Speech recognition** — learns the mapping from audio waves to text from vast recorded speech.
+* **Spam filtering**: learns spam patterns from millions of labeled emails.
+* **House price estimation**: learns the relationship between features (size, location, age) and price from historical sales.
+* **Credit card fraud detection**: learns normal spending patterns and flags anomalies in real time.
+* **Product recommendations**: learns your preferences from your behavior and that of similar users.
+* **Medical diagnosis support**: learns to detect tumors from thousands of annotated scans.
+* **Speech recognition**: learns the mapping from audio waves to text from vast recorded speech.
 
 Notice the pattern in every example: no programmer wrote the decision logic. It was learned from data.
 
@@ -167,8 +167,8 @@ Notice the pattern in every example: no programmer wrote the decision logic. It 
 
 This topic explains *what* learning is; the rest of the track makes it concrete:
 
-* The measurement of error and the adjustment mechanism (**gradient descent**) appear later in this chapter as intuition, and are derived properly in the math chapters (**Chapters 2–6**).
-* Classical ML models — linear regression, decision trees, and friends — are studied in **Chapter 7** and implemented from scratch in **Part 2 — Building AI**.
+* The measurement of error and the adjustment mechanism (**gradient descent**) appear later in this chapter as intuition, and are derived properly in the math chapters (**Chapters 2 through 6**).
+* Classical ML models (linear regression, decision trees, and friends) are studied in **Chapter 7: Classical Machine Learning** and implemented from scratch in **Part 2: Building AI**.
 * The same learning loop, scaled up to billions of parameters, becomes Deep Learning (**Part 3**) and Large Language Models (**Part 4**).
 
 The training loop you just read in four bullet points is, genuinely, the same loop that trains frontier AI models. Only the scale changes.
@@ -180,8 +180,8 @@ The training loop you just read in four bullet points is, genuinely, the same lo
 * Machine Learning builds systems that learn from data instead of following hand-written rules.
 * ML inverts traditional programming: data + answers → rules (the model), rather than rules + data → answers.
 * Learning means automatically adjusting a model's parameters to reduce error on examples.
-* The goal is generalization — performance on unseen data — not memorizing training data.
-* Every ML system is data + model + learning algorithm — only the scale changes.
+* The goal is generalization (performance on unseen data), not memorizing training data.
+* Every ML system is data + model + learning algorithm. Only the scale changes.
 * ML is the right tool when rules are unknown, complex, or changing; traditional code is the right tool when rules are exact and stable.
 
 ---
@@ -190,20 +190,20 @@ The training loop you just read in four bullet points is, genuinely, the same lo
 
 ### Primary
 
-* *The Hundred-Page Machine Learning Book* — Andriy Burkov
+* *The Hundred-Page Machine Learning Book*, Andriy Burkov
   https://themlbook.com/
 
 ### Supplementary
 
-* *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow (3rd Edition)* — Aurélien Géron
-* *Machine Learning* — Tom M. Mitchell (source of the classic learning definition)
+* *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow (3rd Edition)*, Aurélien Géron
+* *Machine Learning*, Tom M. Mitchell (source of the classic learning definition)
 
 ### Articles
 
-* Google — Introduction to Machine Learning
+* Google: Introduction to Machine Learning
   https://developers.google.com/machine-learning/intro-to-ml
 
-* IBM — What is Machine Learning?
+* IBM: What is Machine Learning?
   https://www.ibm.com/think/topics/machine-learning
 
 ---
@@ -213,12 +213,12 @@ The training loop you just read in four bullet points is, genuinely, the same lo
 1. Why is it impossible to write explicit rules for recognizing a cat in a photo, when a child learns it effortlessly from a few examples?
 2. If a model scores 100% on its training data, why might that be bad news rather than good news?
 3. Think of a problem in your daily life: would you solve it with hand-written rules or with learning from data? Why?
-4. Samuel's definition says "without being explicitly programmed" — but humans still choose the data, the model type, and the goal. Is ML really free of human programming?
+4. Samuel's definition says "without being explicitly programmed", but humans still choose the data, the model type, and the goal. Is ML really free of human programming?
 
 ---
 
 ## Next Topic
 
-Machines learn from data — but *data comes in different forms*. Sometimes it includes correct answers, sometimes it doesn't, and sometimes the only feedback is reward or punishment. These three situations define the three great **learning paradigms**.
+Machines learn from data, but *data comes in different forms*. Sometimes it includes correct answers, sometimes it doesn't, and sometimes the only feedback is reward or punishment. These three situations define the three great **learning paradigms**.
 
 **Next → [Topic 03: Learning Paradigms](topic-03-learning-paradigms.md)**
