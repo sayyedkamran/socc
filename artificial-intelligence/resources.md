@@ -1,6 +1,6 @@
-# SOCC Resources
+# Artificial Intelligence Resources
 
-Aggregated learning resources for the School of Computing and Cognition. Topic-specific references live at the bottom of each topic file; this page collects channels and resources that serve entire tracks of the curriculum.
+Aggregated learning resources for the Artificial Intelligence track. Topic-specific references live at the bottom of each topic file; this page collects channels and resources that serve the track as a whole.
 
 ## YouTube Channels
 
