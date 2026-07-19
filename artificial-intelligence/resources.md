@@ -24,10 +24,6 @@ Channels aligned with the SOCC approach: visual intuition first, then rigor, the
 * [Sebastian Raschka](https://www.youtube.com/@SebastianRaschka): companion channel to *Build a Large Language Model (From Scratch)*, a core curriculum text.
 * [AI Coffee Break with Letitia](https://www.youtube.com/@AICoffeeBreak): short, honest paper explainers for staying current with the field.
 
-### Full University Courses
-
-* [Agha Ali Raza](https://www.youtube.com/@aghaaliraza): complete LUMS lecture series, including a full Machine Learning course and a Speech Processing course delivered in Urdu/Hindi; real university rigor with assignments, and the only Urdu-language resource on this list. An alternate spine for the classical ML chapters.
-
 ## Books
 
 ### Foundations and Theory
@@ -44,6 +40,43 @@ Channels aligned with the SOCC approach: visual intuition first, then rigor, the
 * [Raschka, *Build a Large Language Model (From Scratch)*](https://www.manning.com/books/build-a-large-language-model-from-scratch): implements a GPT-style model end to end in PyTorch; the companion text for Part 1 Chapter 9 and Part 2.
 * [Alammar and Grootendorst, *Hands-On Large Language Models*](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/): visual, practical guide to using and understanding modern LLMs.
 * [Huyen, *AI Engineering*](https://www.oreilly.com/library/view/ai-engineering/9781098166298/): building applications on top of foundation models; evaluation, RAG, agents, and deployment.
+
+### Reading List (Pending Curation)
+
+Imported from the working reading list; to be sorted, deduplicated against the sections above, annotated, and linked in a later pass.
+
+* *Mathematics for Machine Learning*, Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong
+* *Pattern Recognition and Machine Learning*, Christopher M. Bishop
+* *Understanding Machine Learning: From Theory to Algorithms*, Shai Shalev-Shwartz and Shai Ben-David
+* *Probabilistic Machine Learning: An Introduction*, Kevin P. Murphy
+* *Reinforcement Learning: An Introduction*, Richard S. Sutton and Andrew G. Barto
+* *Information Theory, Inference, and Learning Algorithms*, David J. C. MacKay
+* *An Introduction to Statistical Learning*, Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani
+* *The Elements of Statistical Learning*, Trevor Hastie, Robert Tibshirani, and Jerome Friedman
+* *Designing Machine Learning Systems*, Chip Huyen
+* *Understanding Deep Learning*, Simon Prince
+* *Linear Algebra Done Right*, Sheldon Axler
+* *Introduction to Applied Linear Algebra*, Stephen Boyd and Lieven Vandenberghe
+* *Calculus*, Michael Spivak
+* *Vector Calculus, Linear Algebra and Differential Forms*, John Hubbard and Barbara Hubbard
+* *Probability Theory: The Logic of Science*, E. T. Jaynes
+* *All of Statistics*, Larry Wasserman
+* *Statistical Inference*, George Casella and Roger Berger
+* *Convex Optimization*, Stephen Boyd and Lieven Vandenberghe
+* *Numerical Linear Algebra*, Lloyd N. Trefethen and David Bau III
+* *Elements of Information Theory*, Thomas Cover and Joy Thomas
+* *Introduction to Algorithms*
+* *Graph Theory*, Reinhard Diestel
+* *Probability: For the Enthusiastic Beginner*, David J. Morin
+* *Information Theory: A Tutorial Introduction*, James V. Stone
+* *Introduction to Probability*, Dimitri P. Bertsekas and John N. Tsitsiklis
+* *Numerical Optimization*, Jorge Nocedal and Stephen J. Wright
+* *Linear Algebra and Learning from Data*, Gilbert Strang
+* *Computer Age Statistical Inference*, Efron and Hastie
+* *Causal Inference: What If*, Hernan and Robins
+* *Entropy and Information Theory*, Robert Gray
+* *Think DSP*, Allen Downey
+* *Introduction to the Theory of Computation*, Michael Sipser
 
 ## Courses and Interactive Resources
 
