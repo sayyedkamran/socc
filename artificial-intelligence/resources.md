@@ -24,6 +24,10 @@ Channels aligned with the SOCC approach: visual intuition first, then rigor, the
 * [Sebastian Raschka](https://www.youtube.com/@SebastianRaschka): companion channel to *Build a Large Language Model (From Scratch)*, a core curriculum text.
 * [AI Coffee Break with Letitia](https://www.youtube.com/@AICoffeeBreak): short, honest paper explainers for staying current with the field.
 
+### Full University Courses
+
+* [Agha Ali Raza](https://www.youtube.com/@aghaaliraza): complete LUMS lecture series, including a full Machine Learning course and a Speech Processing course delivered in Urdu/Hindi; real university rigor with assignments, and the only Urdu-language resource on this list. An alternate spine for the classical ML chapters.
+
 ## Books
 
 ### Foundations and Theory
