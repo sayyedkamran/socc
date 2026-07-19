@@ -26,57 +26,78 @@ Channels aligned with the SOCC approach: visual intuition first, then rigor, the
 
 ## Books
 
-### Foundations and Theory
+Grouped by area. Within each category, books are ordered by priority: the one to read first (or the most valuable) sits at the top. Annotations and links for newer entries will be added in a later pass.
 
-* [Goodfellow, Bengio, and Courville, *Deep Learning*](https://www.deeplearningbook.org/): the standard theoretical reference for deep learning; free online. The formal counterpart to Part 1 Chapters 2 through 8.
-* [Russell and Norvig, *Artificial Intelligence: A Modern Approach*](https://aima.cs.berkeley.edu/): the classic survey of the whole field; the widest map of AI beyond machine learning.
-* [Jurafsky and Martin, *Speech and Language Processing* (3rd edition draft)](https://web.stanford.edu/~jurafsky/slp3/): the definitive NLP text; free online. Covers tokenization, embeddings, sequence models, and transformers in depth.
-* [Burkov, *The Hundred-Page Machine Learning Book*](https://themlbook.com/): the densest useful summary of classical ML; ideal for review after Part 1 Chapter 7.
-* [Burkov, *The Hundred-Page Language Models Book*](https://thelmbook.com/): the same compression applied to language models.
+### Core AI and Machine Learning
 
-### Practice and Engineering
+1. [Burkov, *The Hundred-Page Machine Learning Book*](https://themlbook.com/): the densest useful summary of classical ML; the fastest way to get the whole map.
+2. James, Witten, Hastie, and Tibshirani, *An Introduction to Statistical Learning*
+3. [Russell and Norvig, *Artificial Intelligence: A Modern Approach*](https://aima.cs.berkeley.edu/): the classic survey of the whole field; the widest map of AI beyond machine learning.
+4. Bishop, *Pattern Recognition and Machine Learning*
+5. Murphy, *Probabilistic Machine Learning: An Introduction*
+6. Hastie, Tibshirani, and Friedman, *The Elements of Statistical Learning*
+7. Shalev-Shwartz and Ben-David, *Understanding Machine Learning: From Theory to Algorithms*
 
-* [Géron, *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow*](https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/): the standard practical ML text; theory from Part 1 turned into working code.
-* [Raschka, *Build a Large Language Model (From Scratch)*](https://www.manning.com/books/build-a-large-language-model-from-scratch): implements a GPT-style model end to end in PyTorch; the companion text for Part 1 Chapter 9 and Part 2.
-* [Alammar and Grootendorst, *Hands-On Large Language Models*](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/): visual, practical guide to using and understanding modern LLMs.
-* [Huyen, *AI Engineering*](https://www.oreilly.com/library/view/ai-engineering/9781098166298/): building applications on top of foundation models; evaluation, RAG, agents, and deployment.
+### Deep Learning
 
-### Reading List (Pending Curation)
+1. Prince, *Understanding Deep Learning*
+2. [Goodfellow, Bengio, and Courville, *Deep Learning*](https://www.deeplearningbook.org/): the standard theoretical reference for deep learning; free online. The formal counterpart to Part 1 Chapters 2 through 8.
 
-Imported from the working reading list; to be sorted, deduplicated against the sections above, annotated, and linked in a later pass.
+### NLP and Large Language Models
 
-* *Mathematics for Machine Learning*, Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong
-* *Pattern Recognition and Machine Learning*, Christopher M. Bishop
-* *Understanding Machine Learning: From Theory to Algorithms*, Shai Shalev-Shwartz and Shai Ben-David
-* *Probabilistic Machine Learning: An Introduction*, Kevin P. Murphy
-* *Reinforcement Learning: An Introduction*, Richard S. Sutton and Andrew G. Barto
-* *Information Theory, Inference, and Learning Algorithms*, David J. C. MacKay
-* *An Introduction to Statistical Learning*, Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani
-* *The Elements of Statistical Learning*, Trevor Hastie, Robert Tibshirani, and Jerome Friedman
-* *Designing Machine Learning Systems*, Chip Huyen
-* *Understanding Deep Learning*, Simon Prince
-* *Linear Algebra Done Right*, Sheldon Axler
-* *Introduction to Applied Linear Algebra*, Stephen Boyd and Lieven Vandenberghe
-* *Calculus*, Michael Spivak
-* *Vector Calculus, Linear Algebra and Differential Forms*, John Hubbard and Barbara Hubbard
-* *Probability Theory: The Logic of Science*, E. T. Jaynes
-* *All of Statistics*, Larry Wasserman
-* *Statistical Inference*, George Casella and Roger Berger
-* *Convex Optimization*, Stephen Boyd and Lieven Vandenberghe
-* *Numerical Linear Algebra*, Lloyd N. Trefethen and David Bau III
-* *Elements of Information Theory*, Thomas Cover and Joy Thomas
-* *Introduction to Algorithms*
-* *Graph Theory*, Reinhard Diestel
-* *Probability: For the Enthusiastic Beginner*, David J. Morin
-* *Information Theory: A Tutorial Introduction*, James V. Stone
-* *Introduction to Probability*, Dimitri P. Bertsekas and John N. Tsitsiklis
-* *Numerical Optimization*, Jorge Nocedal and Stephen J. Wright
-* *Linear Algebra and Learning from Data*, Gilbert Strang
-* *Computer Age Statistical Inference*, Efron and Hastie
-* *Causal Inference: What If*, Hernan and Robins
-* *Entropy and Information Theory*, Robert Gray
-* *Think DSP*, Allen Downey
-* *Introduction to the Theory of Computation*, Michael Sipser
+1. [Raschka, *Build a Large Language Model (From Scratch)*](https://www.manning.com/books/build-a-large-language-model-from-scratch): implements a GPT-style model end to end in PyTorch; the companion text for Part 1 Chapter 9 and Part 2.
+2. [Jurafsky and Martin, *Speech and Language Processing* (3rd edition draft)](https://web.stanford.edu/~jurafsky/slp3/): the definitive NLP text; free online. Covers tokenization, embeddings, sequence models, and transformers in depth.
+3. [Alammar and Grootendorst, *Hands-On Large Language Models*](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/): visual, practical guide to using and understanding modern LLMs.
+4. [Burkov, *The Hundred-Page Language Models Book*](https://thelmbook.com/): the same compression applied to language models.
+
+### Reinforcement Learning
+
+1. Sutton and Barto, *Reinforcement Learning: An Introduction*
+
+### Engineering and Practice
+
+1. [Geron, *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow*](https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/): the standard practical ML text; theory from Part 1 turned into working code.
+2. [Huyen, *AI Engineering*](https://www.oreilly.com/library/view/ai-engineering/9781098166298/): building applications on top of foundation models; evaluation, RAG, agents, and deployment.
+3. Huyen, *Designing Machine Learning Systems*
+
+### Mathematical Foundations
+
+1. Deisenroth, Faisal, and Ong, *Mathematics for Machine Learning*
+2. Strang, *Linear Algebra and Learning from Data*
+3. Boyd and Vandenberghe, *Introduction to Applied Linear Algebra*
+4. Axler, *Linear Algebra Done Right*
+5. Trefethen and Bau, *Numerical Linear Algebra*
+6. Hubbard and Hubbard, *Vector Calculus, Linear Algebra and Differential Forms*
+7. Spivak, *Calculus*
+
+### Probability and Statistics
+
+1. Bertsekas and Tsitsiklis, *Introduction to Probability*
+2. Morin, *Probability: For the Enthusiastic Beginner*
+3. Wasserman, *All of Statistics*
+4. Casella and Berger, *Statistical Inference*
+5. Efron and Hastie, *Computer Age Statistical Inference*
+6. Jaynes, *Probability Theory: The Logic of Science*
+7. Hernan and Robins, *Causal Inference: What If*
+
+### Information Theory
+
+1. Stone, *Information Theory: A Tutorial Introduction*
+2. MacKay, *Information Theory, Inference, and Learning Algorithms*
+3. Cover and Thomas, *Elements of Information Theory*
+4. Gray, *Entropy and Information Theory*
+
+### Optimization
+
+1. Boyd and Vandenberghe, *Convex Optimization*
+2. Nocedal and Wright, *Numerical Optimization*
+
+### Computer Science Foundations
+
+1. Cormen, Leiserson, Rivest, and Stein, *Introduction to Algorithms*
+2. Sipser, *Introduction to the Theory of Computation*
+3. Diestel, *Graph Theory*
+4. Downey, *Think DSP*
 
 ## Courses and Interactive Resources
 
