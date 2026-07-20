@@ -110,6 +110,7 @@ Grouped by area. Within each category, books are ordered by priority: the one to
 * [Kaggle Learn](https://www.kaggle.com/learn): short, free, hands-on courses with in-browser notebooks; no setup needed for first contact with code.
 * [Hugging Face Learn](https://huggingface.co/learn): free courses on transformers, NLP, and agents, built around the ecosystem used everywhere in practice.
 * [DeepLearning.AI](https://www.deeplearning.ai/): Andrew Ng's specializations and short courses; the Deep Learning Specialization fills the CNN and RNN gaps that visual channels skip.
+* [AI Engineering from Scratch](https://github.com/rohitg00/ai-engineering-from-scratch): free open-source curriculum of 503 lessons across 20 phases, from math foundations to agents and production; every algorithm built from raw math first, in Python, TypeScript, Rust, and Julia.
 
 ## Blogs and Essays
 
