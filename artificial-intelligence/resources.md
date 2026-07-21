@@ -27,6 +27,7 @@ Channels aligned with the SOCC approach: visual intuition first, then rigor, the
 ### Full University Courses
 
 * [Agha Ali Raza](https://www.youtube.com/@aghaaliraza): complete LUMS lecture series, including a full Machine Learning course and a Speech Processing course delivered in Urdu/Hindi; real university rigor with assignments, and the only Urdu-language resource on this list. An alternate spine for the classical ML chapters.
+* [Stanford CME295: Transformers and Large Language Models (Autumn 2025)](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy): a nine-lecture graduate course tracing NLP from foundations to the core Transformer components and modern LLMs; a rigorous companion to Topic 13: Attention, Topic 14: Transformers, and Topic 15: Large Language Models.
 
 ## Books
 
