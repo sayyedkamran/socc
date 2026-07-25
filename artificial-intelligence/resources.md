@@ -54,6 +54,13 @@ Grouped by area. Within each category, books are ordered by priority: the one to
 2. [Jurafsky and Martin, *Speech and Language Processing* (3rd edition draft)](https://web.stanford.edu/~jurafsky/slp3/): the definitive NLP text; free online. Covers tokenization, embeddings, sequence models, and transformers in depth.
 3. [Alammar and Grootendorst, *Hands-On Large Language Models*](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/): visual, practical guide to using and understanding modern LLMs.
 4. [Burkov, *The Hundred-Page Language Models Book*](https://thelmbook.com/): the same compression applied to language models.
+5. Hapke and others, *The LLM Engineering Handbook*: the operational side of shipping LLM systems, from data pipelines to deployment.
+
+### AI Agents
+
+1. Koenigstein, *AI Agents: The Definitive Guide*: a broad survey of agent architectures, planning, and tool use.
+2. Albada, *Building Applications with AI Agents*: an applied text on wiring agents into real products.
+3. Stratis, *AI Agents with MCP*: agent construction centered on the Model Context Protocol, the emerging standard for tool and data access. A companion to Topic 15: Large Language Models and the later agentic chapters.
 
 ### Reinforcement Learning
 
@@ -112,6 +119,66 @@ Grouped by area. Within each category, books are ordered by priority: the one to
 * [Hugging Face Learn](https://huggingface.co/learn): free courses on transformers, NLP, and agents, built around the ecosystem used everywhere in practice.
 * [DeepLearning.AI](https://www.deeplearning.ai/): Andrew Ng's specializations and short courses; the Deep Learning Specialization fills the CNN and RNN gaps that visual channels skip.
 * [AI Engineering from Scratch](https://github.com/rohitg00/ai-engineering-from-scratch): free open-source curriculum of 503 lessons across 20 phases, from math foundations to agents and production; every algorithm built from raw math first, in Python, TypeScript, Rust, and Julia.
+
+### Short Courses on Agents and Applications
+
+Mostly DeepLearning.AI and partner short courses: recognition-depth introductions to the agentic and retrieval layer, each an hour or two. Good for first contact with a technique, not for mastery.
+
+* HuggingFace Agents Course: the ecosystem's own course on building agents with open models and tools.
+* MCP with Anthropic: an introduction to the Model Context Protocol for connecting agents to tools and data.
+* Computer Use with Anthropic: driving a computer through screenshots and actions, one frontier of agentic capability.
+* Building Vector Databases with Pinecone, and Vector Databases from Embeddings to Apps: the storage layer under retrieval-augmented generation.
+* Agent Memory: giving agents persistent state across turns and sessions.
+* Building and Evaluating RAG Apps: the retrieval pipeline end to end, with evaluation.
+* Building Browser Agents: agents that navigate and act on the web.
+* LLMOps: the deployment and operations side of language-model systems.
+* Evaluating AI Agents, and Improving LLM Accuracy: measurement and reliability, the parts most tutorials skip.
+* Agent Design Patterns, and Multi-Agent Systems: reusable structures and coordination across several agents.
+
+## Papers
+
+The agentic-AI reading list: the foundational papers behind tool use, planning, reflection, and retrieval. Deep treatment is deferred to later chapters; these serve as primary sources for Topic 15: Large Language Models and beyond.
+
+1. Yao and others, *ReAct: Synergizing Reasoning and Acting in Language Models*: interleaving chain-of-thought with tool calls, the pattern most agents still use.
+2. Park and others, *Generative Agents: Interactive Simulacra of Human Behavior*: believable multi-agent behavior with memory and reflection.
+3. Schick and others, *Toolformer: Language Models Can Teach Themselves to Use Tools*: models learning when and how to call external tools.
+4. Wei and others, *Chain-of-Thought Prompting Elicits Reasoning in Large Language Models*: the paper that made step-by-step reasoning a standard technique.
+5. Yao and others, *Tree of Thoughts: Deliberate Problem Solving with Large Language Models*: search over reasoning paths rather than a single chain.
+6. Shinn and others, *Reflexion: Language Agents with Verbal Reinforcement Learning*: agents that improve by reflecting on their own failures.
+7. Lewis and others, *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* (survey): grounding generation in retrieved documents, the backbone of most production LLM apps.
+
+## Guides and Whitepapers
+
+Primary-source guidance from the labs building these systems. Authoritative and current, though vendor perspectives; read across all three for balance.
+
+* [Anthropic, *Building Effective Agents*](https://www.anthropic.com/engineering/building-effective-agents): a clear taxonomy of agent patterns and when simpler workflows beat full agents.
+* [Anthropic, *Claude Code Best Practices*](https://www.anthropic.com/engineering/claude-code-best-practices): practical patterns for agentic coding.
+* Google, *Agents* (whitepaper), and *Agents Companion*: Google's framing of agent architecture, evaluation, and operations.
+* OpenAI, *A Practical Guide to Building Agents*: OpenAI's counterpart, focused on the responses and tools stack.
+
+## Code Repositories
+
+Hands-on companions: runnable tutorials and reference implementations that turn the theory above into working code.
+
+* [NirDiamant, *GenAI Agents*](https://github.com/NirDiamant/GenAI_Agents): 50+ tutorials from simple bots to multi-agent systems; one of the most extensive open agent collections.
+* [Microsoft, *AI Agents for Beginners*](https://github.com/microsoft/ai-agents-for-beginners): a structured beginner course on agent fundamentals.
+* [Microsoft, *Machine Learning for Beginners*](https://github.com/microsoft/ML-For-Beginners): a twelve-week classical-ML curriculum, a lighter alternate spine for the ML chapters.
+* [mlabonne, *LLM Course*](https://github.com/mlabonne/llm-course): a widely used roadmap covering LLM fundamentals, fine-tuning, and deployment with notebooks.
+* [Sumanth, *Hands-On AI Engineering*](https://github.com/Sumanth077/Hands-On-AI-Engineering): practical AI-engineering walkthroughs.
+* [*Made with ML*](https://madewithml.com/): MLOps and production-ML foundations, from design to deployment.
+* [*Awesome Generative AI Guide*](https://github.com/aishwaryanr/awesome-generative-ai-guide): a curated index of GenAI courses, papers, and interview material.
+* [DAIR.AI, *Prompt Engineering Guide*](https://www.promptingguide.ai/): the reference guide for prompting techniques, from zero-shot to advanced methods.
+
+## Newsletters
+
+For staying current after the curriculum. The field moves faster than any book; these track it.
+
+* Gradient Ascent: research and engineering roundups.
+* [DecodingML (Paul Iusztin)](https://decodingml.substack.com/): hands-on LLM and MLOps engineering.
+* Deep (Learning) Focus (Cameron Wolfe): deep, paper-driven essays on LLM research.
+* [NeoSage (Shivani)](https://blog.neosage.io/): applied AI writing.
+* Jam with AI (Shirin and Shantanu): approachable AI explainers.
+* Data Hustle (Sai): data and ML career and practice.
 
 ## Blogs and Essays
 
