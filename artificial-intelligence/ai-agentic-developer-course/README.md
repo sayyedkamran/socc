@@ -1,52 +1,40 @@
-# AI_BoK: AI Body of Knowledge
+# AI Agentic Developer Course
 
-AI_BoK is the structured knowledge backbone for the SOCC AI curriculum. It enumerates, in a stable hierarchy with permanent IDs, everything the curriculum treats as knowledge worth teaching. Course content references these IDs so that every topic taught traces back to a defined unit of knowledge, and every unit of knowledge can be checked for coverage.
+A ground-up path from no programming and no AI background to building, evaluating, and deploying production-grade agentic AI systems. The course favors depth: it builds the mathematical, programming, and machine learning foundations that modern agents rest on, rather than starting at prompts and frameworks.
 
-## Why it exists
+## Who this is for
 
-A curriculum built page by page drifts: topics overlap, gaps open silently, and nothing tells you what is missing. AI_BoK inverts this. The knowledge is mapped first as a reference ontology; the course then traverses it. Coverage becomes a property you can measure rather than hope for.
+Learners starting from zero who want to become deep AI agentic developers: people who can not only wire up an agent, but understand and reason about the machinery underneath it, from linear algebra through transformers to multi-agent systems.
 
-## Structure
+## How the course is organized
 
-The BoK is a four-level hierarchy:
+The course is a single linear sequence of phases. Each phase contains modules, and each module contains topics. Every topic maps to a unit in AI_BoK (see `../ai-bok/`), so the course is a guided traversal of a defined body of knowledge rather than an ad hoc collection of lessons.
 
-- **Domain**: the broadest grouping (for example, Core AI).
-- **Knowledge Area**: a major field within a domain (for example, Machine Learning).
-- **Knowledge Unit (KU)**: a coherent teachable cluster within an area (for example, Introduction to Artificial Intelligence).
-- **Topic (T)**: a single teachable lesson, the atomic unit the course authors and maps against.
+- **Phase**: a major stage of the journey.
+- **Module**: a narrative grouping of related knowledge within a phase.
+- **Topic**: a single lesson. Each topic file carries its AI_BoK Topic ID in its front-matter.
 
-## ID scheme
+## The phases
 
-IDs are hierarchical and permanent. Once assigned, an ID is never reused or renumbered.
+- **Phase 0: AI Orientation.** What AI is, where it came from, how it thinks, and what it means for the world. Context before equations.
+- **Phase 1: Mathematical Foundations.** The mathematical language of AI: foundations of mathematics, linear algebra, calculus, probability, statistics, optimization, and information theory.
+- **Phase 2: Programming Foundations.** Programming from scratch, data structures, and algorithms.
+- **Phase 3: Python for AI.** The scientific Python stack and the tools AI is built with.
+- **Phase 4: Machine Learning.** Learning from data: the classical algorithms and the learning paradigm.
+- **Phase 5: Deep Learning.** Neural networks, how they train, and the core architectures.
+- **Phase 6: Language Models.** Sequence models, attention, transformers, and large language models.
+- **Phase 7: Agentic AI.** Turning models into agents that reason, plan, remember, use tools, and cooperate.
+- **Phase 8: Evaluation & Safety.** Measuring, observing, and safeguarding agent behavior.
+- **Phase 9: Production.** Deploying, serving, and operating real agentic systems.
 
-- Domain: `COAI`
-- Knowledge Area: `COAI-01`
-- Knowledge Unit: `COAI-01-KU01`
-- Topic: `COAI-01-KU01-T01`
+## Taking the course in parallel
 
-The four current domains are:
+The content is authored linearly, but it does not all have to be studied strictly in order. The foundational phases lend themselves to parallel study: while working through the mathematics of Phase 1, a learner can begin the programming of Phases 2 and 3, since early programming has few mathematical prerequisites. A practical rhythm is to pair a theory-heavy stretch with a hands-on one so momentum never stalls on a single dry patch. Once the foundations converge, Phases 4 onward are best taken in sequence, since each builds directly on the last.
 
-- `COAI` Core AI
-- `COMP` Computing
-- `MAST` Mathematics & Statistics
-- `SSCI` Supporting Sciences
+## Projects
 
-## Files
+This is a build-first pathway. Hands-on projects are woven throughout and placed where they fit within the phases, so that finishing the course also means having built a portfolio that runs from fundamentals to a deployed agent.
 
-- `ai-bok.csv`: the canonical source of record. All edits happen here (or in the upstream source sheet, then synced). Columns: ID hierarchy (Domain, Knowledge Area, Knowledge Unit, Topic), Description, Difficulty, Prerequisites, Notes.
-- `ai-bok.md`: a human-readable view generated from the CSV. Never edited by hand.
-- `README.md`: this file.
+## Relationship to AI_BoK
 
-## Relationship to the course
-
-The AI Agentic Developer Course is the traversal path through AI_BoK. The course drives; the BoK is filled just-in-time for the topics the course reaches. Each authored course topic carries the BoK Topic ID it fulfills, keeping course and knowledge map in lockstep. Areas and KUs with no Topics listed yet are defined but not yet expanded; they fill in as the course advances.
-
-## Scope and future
-
-AI_BoK currently holds everything the AI curriculum needs, including the Computing, Mathematics, and Supporting Sciences knowledge it depends on. These shared domains are expected to migrate to a broader CS_BoK at a later stage, from which AI_BoK and future siblings (for example, Blockchain and Quantum bodies of knowledge) will derive. Until then, this file is self-contained so that every course phase has a real, referenceable ID today.
-
-## Updating
-
-1. Edit `ai-bok.csv` (or the source sheet, then export to the CSV).
-2. Regenerate `ai-bok.md` from the CSV.
-3. Commit both together so the readable view never drifts from the source.
+AI_BoK (`../ai-bok/`) is the body of knowledge this course traverses. The course drives: knowledge units are authored and filled in as the course reaches them. Each topic here names the AI_BoK Topic ID it fulfills, keeping the course and the knowledge map in lockstep.
