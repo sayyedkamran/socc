@@ -9,7 +9,11 @@ Legend: Domain > Knowledge Area > Knowledge Unit (KU) > Topic (T). Empty Topic l
 ### COAI-01: Artificial Intelligence Foundations
 
 **COAI-01-KU01: Introduction to Artificial Intelligence**
-- `COAI-01-KU01-T01` What is Artificial Intelligence?: Definition of AI, formal definitions, artificial vs. natural intelligence, goals of AI, what makes a system intelligent.
+#### COAI-01-KU01-T01
+
+What is Artificial Intelligence?: Definition of AI, formal definitions, artificial vs. natural intelligence, goals of AI, what makes a system intelligent.
+
+[Go to topic ->](../ai-agentic-developer-course/phase-0-ai-orientation/module-1-understanding-ai/topic-01-what-is-artificial-intelligence.md)
 - `COAI-01-KU01-T02` Why Artificial Intelligence?: Motivation for AI, problems AI aims to solve, automation vs. augmentation, intelligent behavior in machines.
 - `COAI-01-KU01-T03` Characteristics of AI Systems: Perception, reasoning, learning, decision making, action, adaptation, autonomy, and their roles in intelligent systems.
 - `COAI-01-KU01-T04` Intelligence in Machines: Intelligence, rationality, goal-directed behavior, intelligence vs. consciousness, different perspectives on machine intelligence.
