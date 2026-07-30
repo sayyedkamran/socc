@@ -5,7 +5,7 @@ Prerequisites: None
 
 # What is Artificial Intelligence?
 
-BoK-Link: [COAI-01-KU01-T01](../../../ai-bok/ai-bok.md#coai-01-ku01-t01)
+> **COAI-01-KU01-T01**  ·  Prerequisites: None  ·  [BoK reference](../../../ai-bok/ai-bok.md#coai-01-ku01-t01)
 
 ## Objectives
 
