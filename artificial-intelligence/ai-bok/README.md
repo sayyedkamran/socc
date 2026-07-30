@@ -33,9 +33,11 @@ The four current domains are:
 
 ## Files
 
-- `ai-bok.csv`: the canonical source of record. All edits happen here (or in the upstream source sheet, then synced). Columns: ID hierarchy (Domain, Knowledge Area, Knowledge Unit, Topic), Description, Difficulty, Prerequisites, Notes.
-- `ai-bok.md`: a human-readable view generated from the CSV. Never edited by hand.
+- [`ai-bok.csv`](ai-bok.csv): the canonical source of record in the repository. Generated from the upstream Google Sheet, never edited by hand. Columns: ID hierarchy (Domain, Knowledge Area, Knowledge Unit, Topic), Difficulty, Prerequisites. Topic cells carry a link to the authored course topic where one exists.
+- [`ai-bok.md`](ai-bok.md): a human-readable table view generated alongside the CSV. Never edited by hand.
 - `README.md`: this file.
+
+The upstream Google Sheet holds the full data, including the Description and Notes columns, which are kept out of the repository files to keep the table readable. The Sheet is the editing surface; the CSV and Markdown view are generated from it.
 
 ## Relationship to the course
 
@@ -47,6 +49,6 @@ AI_BoK currently holds everything the AI curriculum needs, including the Computi
 
 ## Updating
 
-1. Edit `ai-bok.csv` (or the source sheet, then export to the CSV).
-2. Regenerate `ai-bok.md` from the CSV.
-3. Commit both together so the readable view never drifts from the source.
+1. Edit the upstream Google Sheet. All content changes happen there, including Description and Notes.
+2. Regenerate [`ai-bok.csv`](ai-bok.csv) and [`ai-bok.md`](ai-bok.md) from the Sheet.
+3. Commit both together so the CSV and the readable view never drift from each other or from the Sheet.
