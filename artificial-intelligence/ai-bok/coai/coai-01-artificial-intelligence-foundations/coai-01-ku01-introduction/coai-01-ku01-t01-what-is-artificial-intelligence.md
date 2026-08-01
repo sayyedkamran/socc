@@ -1,6 +1,6 @@
 # What is Artificial Intelligence?
 
-[BoK_ID: `COAI-01-KU01-T01` | Prerequisites: None | [BoK reference](../../../ai-bok/ai-bok.md#coai-01-ku01-t01)]
+[BoK_ID: `COAI-01-KU01-T01` | Prerequisites: None | [BoK reference](../../../ai-bok.md#coai-01-ku01-t01)]
 
 ## Objectives
 
@@ -84,6 +84,3 @@ A **chatbot** built on a modern language model acts humanly in the Turing sense,
 - McCarthy, J. "What Is Artificial Intelligence?" An accessible essay from a founder of the field.
 - Turing, A. "Computing Machinery and Intelligence." The origin of the imitation game, relevant to the "acting humanly" view.
 
-## Next Topic
-
-[COAI-01-KU01-T02: Why Artificial Intelligence?](topic-02-why-artificial-intelligence.md)
