@@ -2,6 +2,8 @@
 
 A ground-up path from no programming and no AI background to building, evaluating, and deploying production-grade agentic AI systems. The course favors depth: it builds the mathematical, programming, and machine learning foundations that modern agents rest on, rather than starting at prompts and frameworks.
 
+**Start here:** the [Course Contents](course-contents.md) is the ordered map of every phase, module, and topic. Begin there and follow the topics in order.
+
 ## Who this is for
 
 Learners starting from zero who want to become deep AI agentic developers: people who can not only wire up an agent, but understand and reason about the machinery underneath it, from linear algebra through transformers to multi-agent systems.
@@ -12,7 +14,7 @@ The course is a single linear sequence of phases. Each phase contains modules, a
 
 - **Phase**: a major stage of the journey.
 - **Module**: a narrative grouping of related knowledge within a phase.
-- **Topic**: a single lesson. Each topic file carries its AI_BoK Topic ID in its front-matter.
+- **Topic**: a single lesson. Each topic file carries its [AI_BoK](../ai-bok/) Topic ID in a metadata line just below its title, and each topic appears in `course-contents.md` with that ID in brackets after the title (for example, `[AI_BoK ID: COAI-01-KU01-T001]`) so learners grow familiar with the knowledge map.
 
 ## The phases
 
@@ -37,4 +39,4 @@ This is a build-first pathway. Hands-on projects are woven throughout and placed
 
 ## Relationship to AI_BoK
 
-AI_BoK (`../ai-bok/`) is the body of knowledge this course traverses. The course drives: knowledge units are authored and filled in as the course reaches them. Each topic here names the AI_BoK Topic ID it fulfills, keeping the course and the knowledge map in lockstep.
+AI_BoK (`../ai-bok/`) is the body of knowledge this course traverses. The course drives: knowledge units are authored and filled in as the course reaches them. Each topic names the AI_BoK Topic ID it fulfills in a metadata line, keeping the course and the knowledge map in lockstep.

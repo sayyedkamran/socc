@@ -7,13 +7,13 @@ Canonical source: `ai-bok.csv` (generated from the SOCC AI data Google Sheet). F
 | COAI | Core AI |  |  |  |  |  |
 |  | COAI-01 | Artificial Intelligence Foundations |  |  |  |  |
 |  |  | COAI-01-KU01 | Introduction to Artificial Intelligence |  |  |  |
-|  |  |  | COAI-01-KU01-T01 | [What is Artificial Intelligence?](https://github.com/sayyedkamran/socc/blob/main/artificial-intelligence/ai-agentic-developer-course/phase-0-ai-orientation/module-1-understanding-ai/topic-01-what-is-artificial-intelligence.md) | Low | Nil |
-|  |  |  | COAI-01-KU01-T02 | Why Artificial Intelligence? |  |  |
-|  |  |  | COAI-01-KU01-T03 | Characteristics of AI Systems |  |  |
-|  |  |  | COAI-01-KU01-T04 | Intelligence in Machines |  |  |
-|  |  |  | COAI-01-KU01-T05 | AI vs. Related Fields |  |  |
-|  |  |  | COAI-01-KU01-T06 | Common Misconceptions about AI |  |  |
-|  |  |  | COAI-01-KU01-T07 | Scope of Artificial Intelligence |  |  |
+|  |  |  | COAI-01-KU01-T001 | [What is Artificial Intelligence?](https://github.com/sayyedkamran/socc/blob/main/artificial-intelligence/ai-bok/coai/coai-01-artificial-intelligence-foundations/coai-01-ku01-introduction/coai-01-ku01-t001-what-is-artificial-intelligence.md) | Low | Nil |
+|  |  |  | COAI-01-KU01-T002 | Why Artificial Intelligence? |  |  |
+|  |  |  | COAI-01-KU01-T003 | Characteristics of AI Systems |  |  |
+|  |  |  | COAI-01-KU01-T004 | Intelligence in Machines |  |  |
+|  |  |  | COAI-01-KU01-T005 | AI vs. Related Fields |  |  |
+|  |  |  | COAI-01-KU01-T006 | Common Misconceptions about AI |  |  |
+|  |  |  | COAI-01-KU01-T007 | Scope of Artificial Intelligence |  |  |
 |  |  | COAI-01-KU02 | History & Evolution of AI |  |  |  |
 |  |  | COAI-01-KU03 | The AI Landscape & Research Areas |  |  |  |
 |  |  | COAI-01-KU04 | Types of Artificial Intelligence |  |  |  |
