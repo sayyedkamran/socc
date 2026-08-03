@@ -1,6 +1,6 @@
 # What is Artificial Intelligence?
 
-[BoK_ID: `COAI-01-KU01-T001` | Prerequisites: None | [BoK reference](../../../ai-bok.md#coai-01-ku01-t001)]
+[AI_BoK_ID: `COAI-01-KU01-T001` | Prerequisites: None | [BoK reference](../../../ai-bok.md#coai-01-ku01-t001)]
 
 ## Objectives
 
