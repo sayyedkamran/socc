@@ -11,6 +11,7 @@ This is the ordered map of the course. It is organized as Phase, then Module, th
 - [Characteristics of AI Systems](../ai-bok/coai/coai-01-artificial-intelligence-foundations/coai-01-ku01-introduction/coai-01-ku01-t003-characteristics-of-ai-systems.md) [AI_BoK_ID: COAI-01-KU01-T003]
 - [Intelligence in Machines](../ai-bok/coai/coai-01-artificial-intelligence-foundations/coai-01-ku01-introduction/coai-01-ku01-t004-intelligence-in-machines.md) [AI_BoK_ID: COAI-01-KU01-T004]
 - [AI vs. Related Fields](../ai-bok/coai/coai-01-artificial-intelligence-foundations/coai-01-ku01-introduction/coai-01-ku01-t005-ai-vs-related-fields.md) [AI_BoK_ID: COAI-01-KU01-T005]
+- [Common Misconceptions about AI](../ai-bok/coai/coai-01-artificial-intelligence-foundations/coai-01-ku01-introduction/coai-01-ku01-t006-common-misconceptions-about-ai.md) [AI_BoK_ID: COAI-01-KU01-T006]
 
 ### Module 2: How AI Thinks & Learns
 
