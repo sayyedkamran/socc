@@ -7,6 +7,7 @@ This is the ordered map of the course. It is organized as Phase, then Module, th
 ### Module 1: Understanding AI
 
 - [What is Artificial Intelligence?](../ai-bok/coai/coai-01-artificial-intelligence-foundations/coai-01-ku01-introduction/coai-01-ku01-t001-what-is-artificial-intelligence.md) [AI_BoK_ID: COAI-01-KU01-T001]
+- [Why Artificial Intelligence?](../ai-bok/coai/coai-01-artificial-intelligence-foundations/coai-01-ku01-introduction/coai-01-ku01-t002-why-artificial-intelligence.md) [AI_BoK_ID: COAI-01-KU01-T002]
 
 ### Module 2: How AI Thinks & Learns
 
