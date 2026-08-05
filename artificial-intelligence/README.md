@@ -8,7 +8,7 @@ The Artificial Intelligence track of SOCC. This folder holds the body of knowled
 
 - **`ai-agentic-developer-track/`** The active course. A ground-up path from no background to building, evaluating, and deploying agentic AI systems. It is a guided traversal of AI_BoK: each topic it teaches maps to a defined unit of knowledge. See its own README for the full phase map.
 
-- **`ai-agentic-developer-course-old/`** An earlier version of the course, archived for reference while the current course is authored fresh.
+- **`ai-engineering-track/`** A broad, build-from-scratch AI engineering curriculum spanning math foundations through ML, deep learning, transformers, generative AI, LLMs, agents, and production. Derived from external MIT-licensed material and progressively re-indexed against AI_BoK. See its own README for attribution and scope.
 
 ## How the pieces fit
 
