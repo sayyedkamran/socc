@@ -1,6 +1,8 @@
 # AI Engineering Track
 
-A comprehensive, build-from-scratch AI engineering curriculum: mathematical foundations through machine learning, deep learning, transformers, generative AI, LLMs, agents, and production systems. Part of SOCC (School of Computing and Cloud).
+> The entire initial content of this track is taken from [ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) by Rohit Ghumare, used under the MIT License. Full credit for the original curriculum goes to the upstream author. See the Attribution and license section below.
+
+A comprehensive, build-from-scratch AI engineering curriculum: mathematical foundations through machine learning, deep learning, transformers, generative AI, LLMs, agents, and production systems. Part of SOCC (Syed's Open Source Computer Science Curriculum).
 
 This track is a learning-and-reshaping workspace. The content is being studied, restructured, extended, and re-indexed against the SOCC AI Body of Knowledge (see `../ai-bok/`). Phases, lessons, and structure will diverge from the original as the track is developed.
 
