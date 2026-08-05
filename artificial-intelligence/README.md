@@ -6,7 +6,7 @@ The Artificial Intelligence track of SOCC. This folder holds the body of knowled
 
 - **`ai-bok/`** AI_BoK, the AI Body of Knowledge. A structured, permanently-numbered map of everything the AI curriculum treats as worth teaching: domains, knowledge areas, knowledge units, and topics. This is the reference ontology the course is built against.
 
-- **`ai-agentic-developer-course/`** The active course. A ground-up path from no background to building, evaluating, and deploying agentic AI systems. It is a guided traversal of AI_BoK: each topic it teaches maps to a defined unit of knowledge. See its own README for the full phase map.
+- **`ai-agentic-developer-track/`** The active course. A ground-up path from no background to building, evaluating, and deploying agentic AI systems. It is a guided traversal of AI_BoK: each topic it teaches maps to a defined unit of knowledge. See its own README for the full phase map.
 
 - **`ai-agentic-developer-course-old/`** An earlier version of the course, archived for reference while the current course is authored fresh.
 
