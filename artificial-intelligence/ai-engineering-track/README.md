@@ -15,7 +15,7 @@ Derived from upstream commit `6b10711` (2026-08-04).
 ## Relationship to the rest of SOCC AI
 
 - `../ai-bok/` is the canonical ontological map for AI. It is the source of truth for structure.
-- `../ai-agentic-developer-course/` is the SOCC-native, beginner-first agentic course, authored from scratch and mapped onto the BoK.
+- `../ai-agentic-developer-track/` is the SOCC-native, beginner-first agentic course, authored from scratch and mapped onto the BoK.
 - This track (`ai-engineering-track/`) is a broad engineering curriculum being reshaped from external material and progressively mapped onto the same BoK.
 
 The two courses are siblings under the AI area, not subsets of each other: the agentic course assumes zero background and leads with the ontology; this track is broader in scope and build-from-scratch in character.
